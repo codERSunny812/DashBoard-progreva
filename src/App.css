@@ -1,0 +1,4 @@
+.custom-border {
+  border-image-source: linear-gradient(172.52deg, rgba(163, 217, 93, 0.035) 4.34%, rgba(163, 217, 93, 0.14) 98.65%);
+  border-image-slice: 1;
+}
