@@ -10,16 +10,20 @@ import Page8 from '../Pages/Page8'
 
 const Main = () => {
   return (
-    <>
-     <Page1/>
-     <Page2/>
-     <Page3/>
-     <Page4/>
-     <Page5/>
-     <Page6/>
-     <Page7/>
-     <Page8/>
-    </>
+    <div className='w-full'>
+      <Page1 />
+      <Page2 />
+      <Page3 />
+      <Page4 />
+      <Page5 />
+      <Page6 />
+      <Page7 />
+
+    
+      <div className="hidden md:block">
+        <Page8 />
+      </div>
+    </div>
   )
 }
 

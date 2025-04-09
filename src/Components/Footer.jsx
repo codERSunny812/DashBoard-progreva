@@ -1,40 +1,58 @@
-import React from 'react'
+import React from 'react';
 import Logo from "../Images/Logo";
+import { FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-   <div className="">
-      <div className="w-full bg-[#17221C] text-[#95CD4D]">
-        <div className="uppper flex items-center justify-around py-4 border-b-2 border-amber-400 px-5">
-          <div className="left">
+    <footer className="w-full bg-[#17221C] text-[#95CD4D] py-6">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col gap-6">
+
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-[#95CD4D] pb-6 gap-8">
+          
+          <div className="flex flex-col gap-4 max-w-md">
             <div className="flex items-center gap-3">
-            <Logo/> 
-            <h1 className='capitalize font-semibold text-xl'>progace</h1>
+              <Logo />
+              <h1 className="capitalize font-semibold text-xl">progace</h1>
             </div>
-            <p className='mt-3 font-medium text-sm leading-5'>
-              Our secure and user-friendly platform is designed for all levels of  <br />investors. With transparency and cutting-edge technology, we're your <br />partner in financial success. Join us today.
+            <p className="font-medium text-sm leading-5">
+              Our secure and user-friendly platform is designed for all levels of investors. With transparency and cutting-edge technology, we're your partner in financial success. Join us today.
             </p>
           </div>
-          <div className="right flex items-center gap-10 capitalize font-medium text-sm">
-             <div className=" flex flex-col gap-1">
+
+          <div className="flex gap-16 text-sm font-medium capitalize">
+            <div className="flex flex-col gap-1">
               <p>learn</p>
               <p>about</p>
               <p>disclaimer</p>
-             </div>
-
-            <div className=" flex flex-col gap-1">
+            </div>
+            <div className="flex flex-col gap-1">
               <p>blogs</p>
-              <p>fAQ's</p>
+              <p>faq's</p>
               <p>privacy policy</p>
             </div>
           </div>
         </div>
 
-        <h1>hello</h1>
+        
+        <div className="flex flex-col md:flex-row justify-between items-center pt-4 gap-4">
+          
+          <div className="flex gap-4 text-lg">
+            <FaLinkedin className="cursor-pointer hover:text-white" />
+            <FaTwitter className="cursor-pointer hover:text-white" />
+            <FaYoutube className="cursor-pointer hover:text-white" />
+          </div>
 
-    </div>
-   </div>
-  )
-}
+         
+          <div className="flex items-center gap-2 text-sm font-medium">
+            <FaRegCopyright />
+            <span>2022 platform name</span>
+          </div>
+        </div>
 
-export default Footer
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

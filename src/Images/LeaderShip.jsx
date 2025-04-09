@@ -3,7 +3,13 @@ import React from 'react'
 const LeaderShip = () => {
   return (
     <div>
-          <svg width="610" height="572" viewBox="0 0 610 572" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg 
+              viewBox="0 0 610 572"
+              className="sm:w-[400px] w-[410px] h-[572px] md:w-[610px] sm:h-auto"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
               <g filter="url(#filter0_d_12_2596)">
                   <rect x="64" y="48" width="482" height="444" rx="24" fill="white" />
                   <path d="M118.667 101.333H105.333C104.787 101.333 104.333 100.88 104.333 100.333C104.333 99.7867 104.787 99.3334 105.333 99.3334H118.667C119.213 99.3334 119.667 99.7867 119.667 100.333C119.667 100.88 119.213 101.333 118.667 101.333Z" fill="url(#paint0_radial_12_2596)" />

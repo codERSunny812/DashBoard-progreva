@@ -8,11 +8,11 @@ function App() {
  
 
   return (
-   <>
+   <div className="w-full overflow-hidden">
    <Header/>
    <Main/>
    <Footer/>
-   </>
+   </div>
   )
 }
 

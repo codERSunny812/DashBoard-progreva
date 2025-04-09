@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdOutlineContentPaste } from "react-icons/md";
+
 
 const Button = ({ Icon, title }) => {
     return (

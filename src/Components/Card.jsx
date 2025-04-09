@@ -34,7 +34,7 @@ const Card = ({firstText,price,duration,alt,highlight=false}) => {
                 </div>
             )}
             <div className="relative w-[380] h-[110px] rounded-md overflow-hidden">
-                {/* SVG Background */}
+                
                 {
                     highlight ?
                     <SpecialCardBg/> :
@@ -42,7 +42,7 @@ const Card = ({firstText,price,duration,alt,highlight=false}) => {
                 }
               
 
-                {/* Overlay Text */}
+         
                 <div className="absolute top-0 left-0 w-full h-full text-white px-4 capitalize">
                     <h1 className="text-xl font-bold mt-7">{firstText}</h1>
                     <div className={`text-4xl font-semibold ${highlight ? 'text-[#A3D95D]' : 'text-[#03351E]'}`}>
@@ -52,7 +52,6 @@ const Card = ({firstText,price,duration,alt,highlight=false}) => {
                 </div>
             </div>
 
-            {/* Features list */}
             <ul className="px-6 py-4 space-y-3">
                 {customFeatures.map((item, idx) => (
                     <li key={idx} className={`flex items-start gap-2 ${item.available ? 'text-gray-800' : 'text-gray-400'}`}>
@@ -66,7 +65,7 @@ const Card = ({firstText,price,duration,alt,highlight=false}) => {
                 ))}
             </ul>
 
-            {/* Button */}
+       
             <div className="px-6 pb-6 ">
                 <Button title={`pay ₹${price}`} />
             </div>
